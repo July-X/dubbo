@@ -45,7 +45,6 @@
         <url>https://github.com/apache/incubator-dubbo</url>
         <connection>scm:git:https://github.com/apache/incubator-dubbo.git</connection>
         <developerConnection>scm:git:https://github.com/apache/incubator-dubbo.git</developerConnection>
-      <tag>dubbo-{project.version}</tag>
   </scm>
     <mailingLists>
         <mailingList>
@@ -503,7 +502,7 @@
                     <useReleaseProfile>false</useReleaseProfile>
                     <releaseProfiles>apache-release</releaseProfiles>
                     <goals>deploy</goals>
-                    <tagNameFormat>dubbo-{project.version}</tagNameFormat>
+                    <tagNameFormat>dubbo-@{project.version}</tagNameFormat>
                 </configuration>
             </plugin>
         </plugins>
